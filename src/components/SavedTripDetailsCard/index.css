@@ -1,0 +1,98 @@
+.trip-details-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.section-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.budget-section,
+.itinerary-section,
+.hotels-section,
+.packing-section {
+  background-color: #e4e2e2;
+  border: 1px solid #ccc9c9;
+  border-radius: 8px;
+  padding: 13px;
+  margin-bottom: 20px;
+}
+.trip-info-section {
+  margin-bottom: 10px;
+}
+
+.budget-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.total-budget {
+  font-weight: bold;
+}
+
+.day-card {
+  margin-bottom: 20px;
+}
+
+.day-heading {
+  margin-bottom: 12px;
+}
+
+.activities-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.activity-item {
+  padding: 10px;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.activity-item h4 {
+  margin-bottom: 6px;
+}
+
+.hotels-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hotel-card {
+  max-width: 230px;
+}
+
+.packing-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.packing-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.packing-category {
+  font-size: 14px;
+  color: #666666;
+}
+
+@media screen and (max-width: 768px) {
+  .trip-details-container {
+    padding: 10px;
+  }
+
+  .hotels-list {
+    flex-direction: column;
+  }
+
+  .hotel-card {
+    width: 100%;
+  }
+}

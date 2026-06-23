@@ -1,0 +1,52 @@
+.trip-item {
+  list-style-type: none;
+  background-color: #ffffff;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.trip-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.destination {
+  font-size: 24px;
+  margin: 0;
+}
+
+.trip-status {
+  background-color: #e6f4ea;
+  color: #1e7e34;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.trip-details p {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.view-trip-btn {
+  width: 100%;
+  border: none;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.view-trip-btn:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,99 @@
+/* .trip-details-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.section-heading {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.budget-section,
+.itinerary-section,
+.hotels-section,
+.packing-section {
+  margin-bottom: 30px;
+}
+
+.budget-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.total-budget {
+  font-weight: bold;
+}
+
+.day-card {
+  margin-bottom: 20px;
+}
+
+.day-heading {
+  margin-bottom: 12px;
+}
+
+.activities-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.activity-item {
+  padding: 10px;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-item h4 {
+  margin-bottom: 6px;
+}
+
+.hotels-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hotel-card {
+  width: 220px;
+}
+
+.packing-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.packing-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.packing-category {
+  font-size: 14px;
+  color: #666666;
+} */
+
+.save-trip-btn,
+.cancel-trip-btn {
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.save-trip-btn {
+  background-color: #4caf50;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.cancel-trip-btn {
+  background-color: #c5c9c5;
+}
