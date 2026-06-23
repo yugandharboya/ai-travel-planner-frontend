@@ -3,9 +3,7 @@ import { useParams } from "react-router-dom";
 import Cookies from "js-cookie";
 
 import SavedTripDetailsCard from "../../components/SavedTripDetailsCard";
-
 import { BASE_URL } from "../../constants/constants";
-
 import "./index.css";
 
 const TripDetails = () => {

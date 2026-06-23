@@ -9,7 +9,7 @@ export const AppContextProvider = ({ children }) => {
   const [durationDays, setDurationDays] = useState(1);
   const [budgetTier, setBudgetTier] = useState("low");
   const [interests, setInterests] = useState([]);
-  const [savedTrips, setSavedTrips] = useState([]);
+  const [savedTripsList, setSavedTripsList] = useState([]);
   const [openTripForm, setOpenTripForm] = useState(false);
 
   useEffect(() => {
@@ -43,8 +43,8 @@ export const AppContextProvider = ({ children }) => {
         setBudgetTier,
         interests,
         setInterests,
-        savedTrips,
-        setSavedTrips,
+        savedTripsList,
+        setSavedTripsList,
         openTripForm,
         setOpenTripForm,
       }}

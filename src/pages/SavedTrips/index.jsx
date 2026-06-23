@@ -6,7 +6,7 @@ import { BASE_URL } from "../../constants/constants";
 import TripItem from "../../components/TripItem";
 
 const SavedTrips = () => {
-  const { savedTrips, setSavedTrips } = useContext(AppContext);
+  const { savedTripsList, setSavedTripsList } = useContext(AppContext);
 
   const getSavedTrips = async () => {
     const token = Cookies.get("jwt_token");
@@ -29,7 +29,7 @@ const SavedTrips = () => {
       }
 
       if (response.ok) {
-        setSavedTrips(data);
+        setSavedTripsList(data);
       } else {
         console.log(data.message || "Failed to fetch saved trips");
       }
@@ -45,7 +45,7 @@ const SavedTrips = () => {
   return (
     <div className="saved-trips-page">
       <ul className="trips-list">
-        {savedTrips.map((trip) => (
+        {savedTripsList.map((trip) => (
           <TripItem key={trip.id} trip={trip} />
         ))}
       </ul>

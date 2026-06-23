@@ -6,11 +6,11 @@ import { AppContext } from "../context/context";
 const Layout = ({ children }) => {
   const { isSidebarOpen } = useContext(AppContext);
   return (
-    <div className="page-layout">
+    <div className="app-layout">
       <Header />
       <div className="layout-wrapper">
         {isSidebarOpen && <SiderBar />}
-        <main className="main-layout">{children}</main>
+        <main className="main-content-layout">{children}</main>
       </div>
     </div>
   );

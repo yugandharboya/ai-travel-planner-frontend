@@ -6,7 +6,6 @@ import Cookies from "js-cookie";
 
 const TripDetailsCard = ({ tripData }) => {
   const { budget, hotels, packing, itinerary } = tripData;
-  console.log("TripDetailsCard rendered");
   const {
     destination,
     durationDays,
@@ -15,7 +14,7 @@ const TripDetailsCard = ({ tripData }) => {
     setGeneratedTrip,
     generatedTrip,
   } = useContext(AppContext);
-  console.log("generatedTrip:", generatedTrip);
+
   const handleSaveTrip = async () => {
     const token = Cookies.get("jwt_token");
     const tripDetails = {

@@ -3,21 +3,19 @@
   top: 75px;
   left: 0;
   width: 250px;
-  height: 100vh;
+  height: calc(100vh - 75px);
   z-index: 99999;
   background: #1e293b;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
-  opacity: 0.95;
-  padding: 20px;
-  padding-bottom: 100px;
+  opacity: 0.9;
+  padding: 30px;
 }
 .sidebar-logout-btn {
   height: 40px;
   width: 100%;
-  background-color: #1a0ec0;
+  background-color: rgb(190, 28, 28);
   color: white;
   cursor: pointer;
   border: none;
@@ -25,14 +23,27 @@
 .sidebar-top {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .nav-link {
   color: white;
   font-size: 18px;
-  margin-bottom: 10px;
   cursor: pointer;
   text-decoration: none;
-  font-style: normal;
+}
+.sidebar-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .sidebar-close-btn {
+    display: none;
+  }
 }

@@ -2,18 +2,23 @@
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   padding: 10px;
   width: 100%;
   height: 75px;
   border: 1px solid #e5e7eb;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 5px var(--text-secondary);
+  box-shadow: 0 0 5px rgb(119, 119, 118);
   background-color: white;
   z-index: 999;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+}
+.header-content {
+  width: 100%;
+  height: 100%;
+  max-width: 1100px;
 }
 
 .desktop-view {
@@ -26,9 +31,9 @@
   font-size: 24px;
   cursor: pointer;
   border: none;
-  background: none;
+  background: transparent;
 }
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .hamburger-menu {
     display: none;
   }

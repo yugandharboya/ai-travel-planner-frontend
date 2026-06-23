@@ -25,8 +25,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-page">
-      {/* <div className="dashboard-wrapper"> */}
-      <div className="dashboard-content">
+      <div className="dashbord-header">
         <h1 className="dashboard-title">Welcome Back, Yugandhar!</h1>
         <button
           className="create-trip-btn"
@@ -34,10 +33,10 @@ const Dashboard = () => {
         >
           {openTripForm ? "Close Form" : "+ Create New Trip"}
         </button>
-        {openTripForm && <CreateTripForm />}
-        {generatedTrip && <TripDetailsCard tripData={generatedTrip} />}
       </div>
-      {/* </div> */}
+
+      {openTripForm && <CreateTripForm />}
+      {generatedTrip && <TripDetailsCard tripData={generatedTrip} />}
     </div>
   );
 };

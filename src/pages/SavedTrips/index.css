@@ -1,3 +1,8 @@
 .saved-trips-page {
-  height: 100vh;
+  flex-grow: 1;
+}
+.trips-list {
+  flex-grow: 1;
+  list-style-type: none;
+  overflow-y: auto;
 }
