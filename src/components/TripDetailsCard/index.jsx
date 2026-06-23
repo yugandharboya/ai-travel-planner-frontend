@@ -138,7 +138,7 @@ const TripDetailsCard = ({ tripData }) => {
       <button
         className="cancel-trip-btn"
         type="button"
-        onClick={() => setGeneratedTrip({})}
+        onClick={() => setGeneratedTrip(null)}
       >
         Cancel
       </button>

@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import "./index.css";
 import { BASE_URL } from "../../constants/constants";
 import { AppContext } from "../../context/context";
+import Cookies from "js-cookie";
 
 const interest = [
   "Adventure",
@@ -33,6 +34,7 @@ const CreateTripForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    const token = Cookies.get("jwt_token");
 
     if (interests.length === 0) {
       alert("Please select at least one interest.");
@@ -50,6 +52,7 @@ const CreateTripForm = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify(tripData),
     };
